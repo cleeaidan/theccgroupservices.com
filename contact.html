@@ -1,1 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Clee Consulting Group</title>
+  <link rel="icon" href="assets/logo.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header light">
+    <div class="header-inner">
+      <a class="brand" href="index.html">
+        <div class="logo-wrap"><img src="assets/logo.png" alt="" class="logo"></div>
+        <div class="brand-text"><h1 class="brand-title">Clee Consulting Group</h1><div class="brand-sub">Marketing &amp; Sales Services</div></div>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <button id="menuToggleContact" class="menu-btn" aria-expanded="false">Menu</button>
+        <ul id="navListContact" class="nav-list">
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="stats.html">Stats &amp; Philosophy</a></li>
+          <li><a href="contact.html" class="active cta-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact-section">
+      <h2>Contact</h2>
+      <p class="muted">Short, focused intake to get the right person on the call.</p>
+
+      <div class="contact-grid">
+        <form class="card form" action="https://formspree.io/f/your-id" method="POST">
+          <label><span>Name</span><input name="name" type="text" required></label>
+          <label><span>Company</span><input name="company" type="text"></label>
+          <label><span>Email</span><input name="email" type="email" required></label>
+          <label><span>Phone (optional)</span><input name="phone" type="tel"></label>
+          <label><span>Message / Brief</span><textarea name="message" rows="5" required></textarea></label>
+          <div class="form-actions">
+            <button class="btn primary" type="submit">Send Inquiry</button>
+            <a class="btn outline" href="index.html">Cancel</a>
+          </div>
+          <p class="muted small">We respect your privacy — we will only contact you regarding this inquiry.</p>
+        </form>
+
+        <aside class="panel aside">
+          <h4>Prefer email?</h4>
+          <p><a href="mailto:hello@cleeconsulting.com">hello@cleeconsulting.com</a></p>
+
+          <h4>Office</h4>
+          <p class="muted small">Philadelphia, PA — Remote engagements available.</p>
+
+          <div class="image-placeholder mt">[Optional: team photo or textured background image]</div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">© <span id="year5"></span> Clee Consulting Group</div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
 
